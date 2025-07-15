@@ -70,7 +70,7 @@ Package	Purpose
 
 ✅ Recommended: Use Python 3.8+ and a virtual environment for clean setup.
 
-🔐 3. Set Up Your .env File
+### 🔐 3. Set Up Your .env File
 
 In the root directory, create a file named .env and paste your keys:
 
@@ -84,7 +84,7 @@ GROQ_API_KEY=gsk-your_groq_api_key
 
 🔒 This file is ignored by Git and keeps your keys safe.
 
-🚀 4. Run the Project
+### 🚀 4. Run the Project
 
 Once setup is done, run:
 
@@ -98,7 +98,7 @@ Generate a detailed persona using LLaMA 3 via Groq
 
 Save the result in both .txt and .pdf formats under /output
 
-🔁 5. Analyze Multiple Reddit Users (Optional)
+### 🔁 5. Analyze Multiple Reddit Users (Optional)
 
 To analyze more than one user in a single run, edit the usernames list in main.py:
 
