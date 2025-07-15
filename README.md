@@ -8,17 +8,27 @@ This project scrapes Reddit user activity (posts + comments) and generates a det
 
 ## 📌 Features
 
-- 🔎 Scrapes public Reddit data using **PRAW**
-- ⚡ Uses **Groq API** with `llama3-8b-8192` (super fast & free)
-- 🧠 Generates detailed persona:
+ 🔎 Scrapes public Reddit data using **PRAW**
+ 
+⚡ Uses **Groq API** with `llama3-8b-8192` (super fast & free)
+
+🧠 Generates detailed persona:
+
   - Interests & hobbies
+    
   - Communication style
+   
   - Personality traits
+    
   - Political & social leanings
+    
   - Academic/professional background
-- 📄 Outputs results as `.txt` and beautifully formatted `.pdf`
-- 🔁 Works for multiple usernames in one go
-- 🔐 Clean `.env` setup with `.gitignore` for security
+    
+ 📄 Outputs results as `.txt` and beautifully formatted `.pdf`
+
+ 🔁 Works for multiple usernames in one go
+ 
+ 🔐 Clean `.env` setup with `.gitignore` for security
 
 ---
 
@@ -30,7 +40,21 @@ git clone https://github.com/YOUR_USERNAME/reddit-persona-builder.git
 
 cd reddit-persona-builder2. Install Python Dependencies
 
-### 2. pip install -r requirements.txt
+ ### 2. Install Python Dependencies  
+
+> pip install -r requirements.txt
+> 
+> This command will install all the required libraries listed in the `requirements.txt` file, including:  
+
+> - `praw` – for Reddit scraping
+> -  
+> - `groq` – to connect with Groq's LLaMA models
+> -  
+> - `python-dotenv` – to load API keys securely from `.env`
+> -  
+> - `fpdf` – to generate PDF reports of the persona  
+> 
+> Make sure you're using **Python 3.8 or above** and have a **virtual environment activated** (recommended).
 
 ### 3. Set Up Your .env File
    
@@ -84,16 +108,13 @@ This tool is useful for:
 
 ## 🤖 Tech Stack
 
-Python
-
-Reddit API (PRAW)
-
-Groq API
-
-LLaMA 3 (llama3-8b-8192)
-
-FPDF (for PDF generation)
-
-dotenv
+| Technology         | Purpose                                                                 |
+|--------------------|-------------------------------------------------------------------------|
+| **Python**         | Core language for scripting, scraping, and automation                  |
+| **PRAW**           | Python Reddit API Wrapper to fetch posts and comments from Reddit      |
+| **Groq API**       | Ultra-fast inference API to access LLaMA 3 models for persona analysis |
+| **LLaMA 3 (8B)**   | Powerful open-source LLM model (`llama3-8b-8192`) used for reasoning   |
+| **FPDF**           | Python library to convert generated persona into clean PDF format      |
+| **dotenv**         | Loads API keys securely from `.env` file without exposing them         |
 
 ---
