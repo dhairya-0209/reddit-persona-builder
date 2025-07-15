@@ -53,6 +53,9 @@ git clone https://github.com/dhairya-0209/reddit-persona-builder.git
 
 cd reddit-persona-builder
 
+___
+
+
 ### 📦 2. Install Python Dependencies
 
 pip install -r requirements.txt
@@ -70,6 +73,9 @@ Package	Purpose
 
 ✅ Recommended: Use Python 3.8+ and a virtual environment for clean setup.
 
+___
+
+
 ### 🔐 3. Set Up Your .env File
 
 In the root directory, create a file named .env and paste your keys:
@@ -84,7 +90,9 @@ In the root directory, create a file named .env and paste your keys:
 
 🔒 This file is ignored by Git and keeps your keys safe.
 
- 
+___
+
+
 ### 🚀 4. Run the Project
 
 Once setup is done, run:
@@ -98,6 +106,8 @@ The program will:
 - Generate a detailed persona using LLaMA 3 via Groq
 
 - Save the result in both .txt and .pdf formats under /output
+
+___
 
 
 ### 🔁 5. Analyze Multiple Reddit Users (Optional)
