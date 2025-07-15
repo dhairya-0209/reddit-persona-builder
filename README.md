@@ -46,33 +46,35 @@ This project scrapes Reddit user activity (posts + comments) and generates a det
 
 ## 📦 Setup Instructions
 
-### 1. Clone the Repository
+### 🧲 1. Clone the Repository
 
-git clone https://github.com/YOUR_USERNAME/reddit-persona-builder.git
 
-cd reddit-persona-builder2. Install Python Dependencies
+git clone https://github.com/dhairya-0209/reddit-persona-builder.git
 
- ### 2. Install Python Dependencies  
+cd reddit-persona-builder
 
-> pip install -r requirements.txt
-> 
-> This command will install all the required libraries listed in the `requirements.txt` file, including:  
+### 📦 2. Install Python Dependencies
 
-> - `praw` – for Reddit scraping
->    
-> - `groq` – to connect with Groq's LLaMA models
->   
-> - `python-dotenv` – to load API keys securely from `.env`
->   
-> - `fpdf` – to generate PDF reports of the persona  
-> 
-> Make sure you're using **Python 3.8 or above** and have a **virtual environment activated** (recommended).
+pip install -r requirements.txt
 
-### 3. Set Up Your .env File
-   
-Create a .env file in the root directory with the following content:
+This command installs all the required libraries from requirements.txt, including:
 
-REDDIT_CLIENT_ID=your_reddit_client_id 
+Package	Purpose
+- praw	Reddit scraping using Python Reddit API Wrapper
+
+- groq	Connects to Groq's ultra-fast LLaMA 3 models
+
+- python-dotenv	Loads your API keys securely from a .env file
+
+- fpdf	Generates clean PDF versions of the persona output
+
+✅ Recommended: Use Python 3.8+ and a virtual environment for clean setup.
+
+🔐 3. Set Up Your .env File
+
+In the root directory, create a file named .env and paste your keys:
+
+REDDIT_CLIENT_ID=your_reddit_client_id
 
 REDDIT_CLIENT_SECRET=your_reddit_client_secret
 
@@ -80,15 +82,29 @@ REDDIT_USER_AGENT=reddit-persona-builder
 
 GROQ_API_KEY=gsk-your_groq_api_key
 
-### 🚀 Run the Project
+🔒 This file is ignored by Git and keeps your keys safe.
+
+🚀 4. Run the Project
+
+Once setup is done, run:
 
 python main.py
 
-### 🔁 Add Multiple Users
+The program will:
 
-You can analyze multiple Reddit users by modifying main.py like this:
+Scrape Reddit user data (posts + comments)
+
+Generate a detailed persona using LLaMA 3 via Groq
+
+Save the result in both .txt and .pdf formats under /output
+
+🔁 5. Analyze Multiple Reddit Users (Optional)
+
+To analyze more than one user in a single run, edit the usernames list in main.py:
 
 usernames = ["kojied", "Hungry-Move-6603", "spez"]
+
+It will loop through each username and create separate output files automatically.
 
 ---
 
