@@ -59,11 +59,11 @@ cd reddit-persona-builder2. Install Python Dependencies
 > This command will install all the required libraries listed in the `requirements.txt` file, including:  
 
 > - `praw` – for Reddit scraping
-> -  
+>    
 > - `groq` – to connect with Groq's LLaMA models
-> -  
+>   
 > - `python-dotenv` – to load API keys securely from `.env`
-> -  
+>   
 > - `fpdf` – to generate PDF reports of the persona  
 > 
 > Make sure you're using **Python 3.8 or above** and have a **virtual environment activated** (recommended).
