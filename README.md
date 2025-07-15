@@ -74,13 +74,13 @@ Package	Purpose
 
 In the root directory, create a file named .env and paste your keys:
 
-REDDIT_CLIENT_ID=your_reddit_client_id
+- REDDIT_CLIENT_ID=your_reddit_client_id
 
-REDDIT_CLIENT_SECRET=your_reddit_client_secret
+- REDDIT_CLIENT_SECRET=your_reddit_client_secret
 
-REDDIT_USER_AGENT=reddit-persona-builder
+- REDDIT_USER_AGENT=reddit-persona-builder
 
-GROQ_API_KEY=gsk-your_groq_api_key
+- GROQ_API_KEY=gsk-your_groq_api_key
 
 🔒 This file is ignored by Git and keeps your keys safe.
 
@@ -93,11 +93,12 @@ python main.py
 
 The program will:
 
-Scrape Reddit user data (posts + comments)
+- Scrape Reddit user data (posts + comments)
 
-Generate a detailed persona using LLaMA 3 via Groq
+- Generate a detailed persona using LLaMA 3 via Groq
 
-Save the result in both .txt and .pdf formats under /output
+- Save the result in both .txt and .pdf formats under /output
+
 
 ### 🔁 5. Analyze Multiple Reddit Users (Optional)
 
