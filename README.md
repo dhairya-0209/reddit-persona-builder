@@ -84,7 +84,6 @@ GROQ_API_KEY=gsk-your_groq_api_key
 
 🔒 This file is ignored by Git and keeps your keys safe.
 
- --- 
  
 ### 🚀 4. Run the Project
 
